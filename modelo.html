@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula de Amanhã</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body onload="dia()">
+    <header>
+        <h1>Veja quais são as aulas de amanhã</h1>
+    </header>
+    <section>
+        <h1 class=center>Amanhã tem aula de:</h1>
+        <div id="cima">
+        </div>
+        <div>
+            <h1 class="center">Modo personalizado</h1>
+            <p>Quais dias quer ver as aulas: <select id="sel">
+                <option>Segunda</option>
+                <option>Terça</option>
+                <option>Quarta</option>
+                <option>Quinta</option>
+                <option>Sexta</option>
+                <option>Sábado</option>
+                <option>Domingo</option>
+            </select><input id="dir" type="button" value="Ver aulas" onclick="verAula()"></p>
+            <div class="center" id="div"><div id="res">As aulas aparecerão aqui</div></div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Xupa cabesa da mia pica</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
